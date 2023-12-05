@@ -1,0 +1,29 @@
+body{
+    display: block;
+}
+
+nav{
+    height: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+nav > *, #form > * {
+    font-size: 30px;
+    height: 35px;
+    display: inline;
+}
+
+#n{
+    width: 100px;
+}
+
+#download, #cycle{
+    margin-left: 30px;
+}
+
+#c{
+    margin: 0;
+    margin-left: 10px;
+    padding: 0;
+}
