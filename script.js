@@ -242,8 +242,15 @@ $(window).on("resize", function () {
     drawBoard();
 });
 
+$("#n").on("input", function () {
+    console.log($("#n").val());
+    if ($("#n").val() == n) $("#submit").attr("value", "Reset");
+    else $("#submit").attr("value", "Set n");
+});
+
 $("#form").submit(function (e) {
     e.preventDefault();
+    $("#submit").attr("value", "Reset");
     setN($("#n").val());
 });
 
